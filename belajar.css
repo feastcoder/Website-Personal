@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+body{
+    background-color: black;
+}
+
+/* NAVBAR */
+.header{
+    background-color: rgb(47, 50, 50);
+    position: sticky;
+    top: 0;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    display:flex;
+    margin: 15px;
+}
+.firstname > a{
+    text-decoration: none;
+    color:blueviolet;
+    font-size: 20px;
+    font-weight: 700;
+}
+.lastname > a{
+    text-decoration: none;
+    color:ivory;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* NAVBAR END */
+
+/* MAIN */
+    main{
+        overflow: auto;
+        background-color: black
+    }
+    .div-caption{
+        padding: 15px;
+        width: 65%;
+        float: left;
+        padding-left: 200px;
+    }
+    .div-caption > h1{
+        font-size: 40px;
+        font-weight: 600;
+        color: blueviolet;
+    }
+    .div-caption > h2{
+        margin-top: 80px;
+        font-weight: 600;
+        font-size: 30px;
+        color: ivory;
+    }
+    .div-caption > i{
+        margin-top: 5px;
+        color: darkgray;
+    }
+    .div-caption > h4{
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    main > .div-caption > .div-kontak > a > img{
+        width: 20px;
+        margin-left: 15px;
+    }
+    
+    main > .div-caption > .div-kontak{
+        margin-top: 30px;
+    }
+    .div-kontak{
+        display:flex;
+        margin-top: 15px;
+    }
+    .div-kontak > h4{
+        font-weight: bold;
+    }
+    
+    aside{
+        width: 35%;
+        float: right;
+        margin-bottom: 20px;
+    }
+    aside > img{
+        width: 70%;
+        height: 70%;
+        margin-top: 60px;
+        margin-left:0;
+    }
+    
+/* MAIN END */
+
+/* CONTENT */
+section{
+    background-color: black;
+}
+section > h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: ivory;
+    padding-top: 30px;
+    margin-left: 90px;
+    
+}
+section > div{
+    width: 18rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: blueviolet;
+    background-color: rgb(96, 31, 158);
+    padding: 5px;
+    margin-left: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section > div > video{
+    width: 100%;
+}
+section > div > p{
+    margin-top: 10px;
+    color: ivory;
+}
+/* CONTENT END */
+
+/* FOOTER */
+footer{
+    padding: 10px;
+    background-color: rgb(47, 50, 50);
+    color: ivory;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+footer > p{
+    font-weight: 700;
+}
+/* FOOTER END */
+
+button{
+    background-color: blueviolet;
+    color:ivory;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+button:hover{
+    background-color: rgb(71, 3, 135);
+    color: ivory;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1023px){
+   .div-caption{
+    padding-left: 20px;
+   }
+   .div-caption > h2{
+    margin-top: 20px;
+   }
+
+   aside{
+    text-align: center;
+   }
+   aside > img{
+    margin-top: 40px;
+   }
+
+   section > h2{
+    margin-left: 20px;
+   }
+   section > div{
+    margin-left: 20px;
+   }
+}
+@media screen and (max-width:426px){
+    .div-caption, aside{
+        width: 100%;
+        padding-left: 0;
+    }
+    .div-caption{
+        padding-left: 10px;
+    }
+    .div-caption > h2{
+        margin-top: 0;
+        font-size: 20px;
+    }
+    .div-caption > h1{
+        font-size: 30px;
+    }
+
+    aside{
+        text-align: center;
+    }
+    aside > img{
+        margin-top: 20px;
+    }
+
+    section > h2{
+        margin-left: 0;
+        text-align: center;
+    }
+    section > div{
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+}
